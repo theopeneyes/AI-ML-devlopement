@@ -1,0 +1,337 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel reporting survey",
+            "cancel reporting question",
+            "cancel reporitng",
+            "cancel report survey",
+            "cancel report question",
+            "cancel report",
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "can you help me",
+            "please guide me",
+            "please guide",
+            "help",
+            "please help me",
+            "help me",
+            "please help",
+            "guide",
+            "guide me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "survey",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "SurveyIntent",
+          "samples": [
+            "survey id is {survey}",
+            "it is {survey}",
+            "id is {survey}",
+            "{survey}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "name": "QuestionIntent",
+          "samples": [
+            "{answer}"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "SupportIntent",
+          "samples": [
+            "please support",
+            "need support ",
+            "support"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "support_options",
+              "type": "SupportType"
+            }
+          ],
+          "name": "SupportTypeIntent",
+          "samples": [
+            "{support_options}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HomeIntent",
+          "samples": [
+            "home",
+            "alexa home"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ReportQuestionIntent",
+          "samples": [
+            "report question"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ReportSurveyIntent",
+          "samples": [
+            "report survey"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "skip",
+            "next question",
+            "skip question"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "rating",
+              "type": "RatingType"
+            }
+          ],
+          "name": "RatingTypeIntent",
+          "samples": [
+            "my rating is {rating}",
+            "{rating}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "HelpExitIntent",
+          "samples": [
+            "exit help",
+            "help exit"
+          ]
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": [
+            "continue",
+            "resume"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Descriptive_answer",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "DescriptiveTypeIntent",
+          "samples": [
+            "Answer is {Descriptive_answer}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "FeedbackType",
+              "type": "FeedbackSlot"
+            }
+          ],
+          "name": "FeedbackIntent",
+          "samples": [
+            "{FeedbackType}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "I am ready"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "technical support"
+                ],
+                "value": "technical"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "general support"
+                ],
+                "value": "general "
+              }
+            }
+          ],
+          "name": "SupportType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "5",
+                  "4",
+                  "3",
+                  "2"
+                ],
+                "value": "1"
+              }
+            }
+          ],
+          "name": "RatingType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "option z",
+                  "option y",
+                  "option x",
+                  "option w",
+                  "option v",
+                  "option u",
+                  "option t",
+                  "option s",
+                  "option r",
+                  "option q",
+                  "option p",
+                  "option o",
+                  "option n",
+                  "option m",
+                  "option l",
+                  "option k",
+                  "option j",
+                  "option i",
+                  "option h",
+                  "option c",
+                  "option g",
+                  "option f",
+                  "option e",
+                  "option d",
+                  "option b"
+                ],
+                "value": "option a"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "survey is not good",
+                  "i  dont want to continue survey"
+                ],
+                "value": "i dont like survey"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "it was not appropriate survey"
+                ],
+                "value": "it was not appropriate question"
+              }
+            },
+            {
+              "name": {
+                "value": "i dont want to answer this question"
+              }
+            }
+          ],
+          "name": "AMAZON.Person"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "cancel report"
+                ],
+                "value": "cancel reporting"
+              }
+            },
+            {
+              "name": {
+                "value": "continue"
+              }
+            },
+            {
+              "name": {
+                "value": "resume"
+              }
+            }
+          ],
+          "name": "Resume_Custom_Slot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no feedback"
+              }
+            },
+            {
+              "name": {
+                "value": "yes i want to share my thoughts"
+              }
+            },
+            {
+              "name": {
+                "value": "yes i want to share feedback"
+              }
+            },
+            {
+              "name": {
+                "value": "yes "
+              }
+            },
+            {
+              "name": {
+                "value": "no"
+              }
+            }
+          ],
+          "name": "FeedbackSlot"
+        }
+      ],
+      "invocationName": "new survey"
+    }
+  }
+}

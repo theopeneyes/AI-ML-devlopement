@@ -1,0 +1,10 @@
+python-dotenv
+streamlit
+streamlit-audiorecorder
+altair
+transformers
+accelerate
+torch
+langchain
+google-generativeai
+langchain-google-genai

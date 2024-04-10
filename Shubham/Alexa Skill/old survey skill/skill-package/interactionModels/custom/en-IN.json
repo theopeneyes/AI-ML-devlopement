@@ -1,0 +1,302 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "final survey",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop for me to end the skill ",
+            "alexa stop for me to end the skill ",
+            "exit",
+            "stop"
+          ]
+        },
+        {
+          "name": "QuestionIntent",
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.Person",
+              "samples": [
+                "{answer}"
+              ]
+            }
+          ],
+          "samples": [
+            "option",
+            "between {answer}",
+            "{answer}",
+            "option {answer}",
+            "yeah",
+            "yh",
+            "sure",
+            "yes",
+            "okay",
+            "ok",
+            "my answer is {answer}",
+            "it is {answer}",
+            "she is {answer}",
+            "he is {answer}",
+            " {answer} please"
+          ]
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "ReviewIntent",
+          "slots": [],
+          "samples": [
+            "review"
+          ]
+        },
+        {
+          "name": "SurveyIntent",
+          "slots": [
+            {
+              "name": "survey",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{survey}"
+              ]
+            }
+          ],
+          "samples": [
+            "my survey id is {survey}",
+            "id is {survey}",
+            "it is {survey}",
+            "my id is {survey}",
+            "{survey}"
+          ]
+        },
+        {
+          "name": "HelpIntent",
+          "slots": [
+            {
+              "name": "help",
+              "type": "help",
+              "samples": [
+                "{help}"
+              ]
+            }
+          ],
+          "samples": [
+            "guide me ",
+            "guide",
+            "help",
+            "please help me ",
+            "help me",
+            "{help}"
+          ]
+        },
+        {
+          "name": "HomeIntent",
+          "slots": [],
+          "samples": [
+            "home"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": [
+            "wait",
+            "one second ",
+            "one sec"
+          ]
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "options"
+              }
+            }
+          ],
+          "name": "help"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "answers"
+              }
+            }
+          ],
+          "name": "answer"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "SurveyIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "survey",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.646653681014.936781844506"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.Person",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1525419914608.1242837438788"
+              }
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        },
+        {
+          "name": "HelpIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "help",
+              "type": "help",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1375826885315.588200099906"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.646653681014.936781844506",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please give valid Survey I D"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1001203999572.1320048783480",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "give valid answer"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1375826885315.588200099906",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "For a list of options say options or you can resume what you were doing. What can I help you with today ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1525419914608.1242837438788",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Let\u0027s begin three minute assessment about HRCI Survey. Okay?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1525419914608.1242837438788.930136360913",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{answer}"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "2"
+}

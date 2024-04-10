@@ -1,0 +1,85 @@
+{
+	"SKILL_NAME": "new survey",
+	
+	"WELCOME_MESSAGE_PROMPT": "Welcome to OpenEyes Surveys. Tell me your six-digit Survey code to begin.",
+	"WELCOME_MESSAGE_REPROMPT":  "I could not hear you. Could you please tell me your six-digit Survey Code?",
+	
+	"HOME_WELCOME_MESSAGE_PROMPT" : "Ok. Let’s begin. Tell me your six-digit Survey code.",
+	"HOME_WELCOME_MESSAGE_REPROMPT" : "Sorry. I have difficulties listening to your response. Could you please tell me six-digit survey code again.",
+	
+	"SURVEY_CLOSED_PROMPT" : "This survey is not available right now. Please provide valid survey code to start survey.",
+	"SURVEY_NOT_AVAILABLE_PROMPT" : "Sorry. I could not find a survey. Please verify and tell me six-digit survey code again.",
+	
+	"SURVEY_CODE_NOT_SIX_DIGIT" : "Sorry. I could not find a survey. Please verify and tell me six-digit survey code again.",
+	"SURVEY_INTENT_FALBBACK_PROMPT" :  "Please provide valid survey code.",
+	
+	"QUESTION_INTENT_RESUME_INETNT" : "Thank you. I have submitted your request. Hang tight. Someone will get back to you as soon as possible. To continue survey just say 'resume'.",
+	"QUESTION_INTENT_REPORT_SURVEY" : "Got it. Your feedback is extremely valuable to us. Thank you for your participation. Have a wonderful day!",
+	"QUESTION_INTENT_HELP_PROMPT" : "Sorry? I don't understand. How may I help you? <break time='0.15s'/> Please provide valid options related to help. To get out of help just say 'exit help'.",
+	"QUESTION_INTENT_INVALID_RATING_PROMPT" : "Please provide valid rating number in between 1 to 5. ",
+	"QUESTION_INTENT_INVALID_MCQ_OPTION_1" : "Please select only valid options from given list of options.",
+	"QUESTION_INTENT_INVALID_MCQ_OPTION_2" : "You selected wrong options :{invalid_options}. Please select only valid options from given list.",
+	"QUESTION_INTENT_MCQ_OTHER_PROMPT" : "Please describe any other option of your choice.",
+	
+	"MCQ_WITH_MULTIPLE_QUESTION_PROMPT" : "Choose multiple answers for the question <break time='0.30s'/> {question_text} {mcq_options}",
+	
+	"DESCRIPTIVE_QUESTION_PROMPT" : "Answer the question in detail <break time='0.30s'/> {question_text}",
+	
+	"SHORT_ANSWER_QUESTION_PROMPT" : "Answer the question in brief <break time='0.30s'/> {question_text}",
+	
+	"MCQ_WITH_SINGLE_SELECTION_PROMPT" : "Choose your one best answer for the question <break time='0.30s'/> {question_text} {mcq_options}",
+	
+	"RATING_QUESTION_PROMPT" : "Out of {rating_range}, rate the question <break time='0.30s'/> {question_text}",
+	
+	"GROUP_RATING_QUESTION_PROMPT_1" : "Out of {rating_range}, rate the few questions <break time='0.30s'/> {question_text} <break time='0.25s'/> {rating_group}",
+	"GROUP_RATING_QUESTION_PROMPT_2" : "Rate : {group_option_text}",
+	
+	"EXCEPTION_QUESTION_TEXT_PROMPT" : "Question {question_text} {mcq_options}",
+	
+	"THANK_YOU_PROMPT" :  "Thank you for completing the survey. You have a wonderful {time_zone}!",
+	"LAST_QUESTION_REPORT_PROMPT" : "Thank you! I have marked the question for review." ,
+	"REPORT_QUESTION_COMMENT_PROMPT" : "Thank you! I have marked the question for review. Let’s move to the to next question: " ,
+	
+	"QUESTION_INTENT_REPROMPT" :  "Please answer the question otherwise skill will end.",
+	
+	"WRONG_RESPONSE_PROMPT" : "Please provide valid response for given question to continue survey.",
+	
+	"SUPPORT_INTENT_PROMPT" : "Ahh. We are always here to support you. send your querry to info@theOpenEyes.com and will get back to you as soon as possible. To continue survey just say 'resume'.",
+	
+	"FALLBACK_INTENT_PROMPT" : "Hmm, I'm not sure. You can say Hello or Help. What would you like to do?",
+	"FALLBACK_INTENT_REPROMPT" : "I didn't catch that. What can I help you with?",
+	
+	"HELP_INTNET_PROMPT" : "Hello, how can I help? <break time='0.15s'/> You can say any of the following options : 'report question', 'report survey', 'home', 'resume', 'repeat'.",
+	
+	"VALID_SURVEY_CODE_PROMPT" : "Please provide first valid six-digit survey code to start survey.",
+	
+	"EXIT_HELP_INTENT_PROMPT_2" : "I hope the Help feature was able to provide you with the assistance you needed. Let me resume the survey where we left off : ",
+	
+	"REPEAT_INTENT_PROMPT" : "Just say, 'Alexa repeat' after exit from help and I will repeat the last thing I said. To get out of help just say 'exit help'.",
+	
+	"HOME_INTENT_PROMPT" : "Just say, 'Alexa home' after exit from Help and I will take you to the beginning of the skill where you could say the survey code and start another survey. To get out of help just say 'exit help'.",
+	
+	"RESUME_INTENT_PROMPT_1" :  "Just say, 'Alexa resume' or 'Alexa continue' after exit from help and I will continue survey where you have left off. To get out of help just say 'exit help'.",
+	"RESUME_INTENT_PROMPT_3" : "Let me resume the survey where we left off : ",
+	
+	"STOP_INTENT_PROMPT" : "Ok. Let’s close this. Thank you for using OpenEyes Survey, please rate our skill in your Alexa app. Have a wonderful {time_zone}!",
+	
+	"CANCEL_INTENT_PROMPT_1" : "To get out of help just say 'exit help'.",
+	"CANCEL_INTENT_PROMPT_3" : "Please provide valid response for seamless flow of survey.", 
+	
+	"REPORT_QUESTION_INTENT_PROMPT_1" : "Just say, 'report question' after exit from Help and I will mark the last question for review. To get out of help just say 'exit help'.",
+	"REPORT_QUESTION_INTENT_PROMPT_2" : "You cant report feedback question. If you dont prefer to share feedback just say 'no feedback'.",
+	"REPORT_QUESTION_INTENT_PROMPT_3" : "Sure. To report a question for review, I would like to know your reason. Could you please share that briefly? Alternatively, you can say 'cancel report' and I will take you right back where you were.",
+	
+	"REPORT_SURVEY_INTENT_PROMPT_1" : "Just say, 'report survey' after exit from Help and I will mark the survey for review with your valuable feedback. To get out of help just say 'exit help'.",
+	"REPORT_SURVEY_INTENT_PROMPT_2" : "Sure. To report this survey for review, I would like to know your reason. Could you please share that briefly? Alternatively, you can say 'cancel report' and I will take you right back where you were.",
+	
+	"FEEDBACK_INTENT_PROMPT" : "Please share your feedback I am listening.",
+	
+	"SKIP_INTENT_PROMPT_1" : "Your response is mandatory for given question.",
+	"SKIP_INTENT_PROMPT_2" : "You cant skip, feedback question. If you dont prefer to share feedback just say 'no feedback'.",
+	"SKIP_INTENT_PROMPT_3" : "Moving to next question :",
+	"SKIP_INTENT_PROMPT_4" : "You skipped last question of survey, ",
+	
+	"INTENT_REFLECTOR_PROMPT_1" :  "Sorry? I don't understand. How may I help you? <break time='0.15s'/> Please provide valid options related to help. To get out of help just say 'exit help'."
+}
